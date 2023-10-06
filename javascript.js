@@ -16,7 +16,7 @@ form.addEventListener("submit", (event) => {
     } else if (email.validity.valid) {
         event.preventDefault();
         document.querySelector("#header").innerHTML = "";
-        document.querySelector("#header").innerHTML = "<img class='success' src='./assets/images/icon-success.svg' />";
+        document.querySelector("#header").innerHTML = "<img class='success' src='./assets/images/icon-success.svg' alt='' />";
         document.querySelector(".main__h2").textContent = "Thanks for subscribing!";
         document.querySelector("ul").classList.add("hidden");
         document.querySelector(".buttonone").classList.add("hidden");
