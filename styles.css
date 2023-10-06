@@ -43,7 +43,7 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: hsl(235, 18%, 26%);
+  background-color: white;
 }
 
 .main {
@@ -56,6 +56,11 @@ body {
 }
 
 .main__p {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.main__pp {
   font-size: 1rem;
   margin-top: 1.5rem;
 }
@@ -105,8 +110,9 @@ label {
   color: hsl(4, 100%, 67%);
 }
 
-img {
+.header__img {
   width: 100%;
+  object-fit: cover;
 }
 
 .canvas {
@@ -125,6 +131,18 @@ input:focus:invalid {
   outline: none;
 }
 
+.buttontwo {
+  margin-top: 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  margin-left: 2rem;
+}
+
 @media only screen and (min-width: 510px) {
   .canvas {
     display: flex;
@@ -134,5 +152,19 @@ input:focus:invalid {
     padding-top: 2rem;
     padding-right: 1.5rem;
     padding-left: 0.5rem;
+  }
+
+  .main__h2 {
+    font-size: 3rem;
+  }
+
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+
+  .buttontwo {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+
   }
 }

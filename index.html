@@ -14,18 +14,21 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
-  <div class="canvas">
-    <header>
+  <div class="canvas" id="canvas">
+    <header id="header">
       <h1 class="sr-only">Newsletter sign-up</h1>
       <picture>
-        <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 510px)" />
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
+        <source class="header__img" srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 510px)" />
+        <img class="header__img" src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
       </picture>
     </header>
 
     <main class="main">
       <h2 class="main__h2">Stay updated!</h2>
       <p class="main__p">Join 60,000+ product managers receiving monthly updates on:</p>
+      <p class="main__pp hidden">A confirmation email has
+        been sent to <strong id="email-mess">aramnye@gmail.com</strong> Please open it and click the button inside to
+        confirm your subscription</p>
       <ul>
         <div class="items">
           <img src="./assets/images/icon-list.svg" />
@@ -41,14 +44,15 @@
         </div>
       </ul>
 
-      <form novalidate>
+      <form id="form" novalidate>
         <label for="mail">
           Email address:
           <span id="error" aria-live="polite"></span>
         </label>
         <input type="email" id="mail" name="mail" minlength="8" placeholder="email@company.com" required />
-        <button>Subscribe to monthly newsletter</button>
+        <button class="buttonone">Subscribe to monthly newsletter</button>
       </form>
+      <button class="buttontwo hidden">Dismiss message</button>
     </main>
   </div>
   <script src="./javascript.js"></script>
