@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;  /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;            /* 3 */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+
+.items {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.items > img {
+  width: 18px;
+  height: 18px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(235, 18%, 26%);
+}
+
+.main {
+  margin: 0 2rem;
+  margin-top: 2rem;
+}
+
+.main__h2 {
+    font-size: 2rem;
+}
+
+.main__p {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+input[type="email"] {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid hsl(231, 7%, 60%);
+  margin-top: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type="email"]:hover {
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(90deg, rgba(253,75,75,1) 16%, rgba(255,130,87,1) 95%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+label {
+  font-size: 70%;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+#error {
+  color: hsl(4, 100%, 67%);
+}
+
+img {
+  width: 100%;
+}
+
+.canvas {
+  max-width: 800px;
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+input:invalid {
+  border: 1px solid rgba(224, 38, 38, 0.418);
+  background-color: hsla(4, 100%, 67%, 0.123);
+  color: hsl(4, 57%, 52%);
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+@media only screen and (min-width: 510px) {
+  .canvas {
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    align-items: center;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+  }
+}
