@@ -27,7 +27,7 @@ form.addEventListener("submit", (event) => {
         document.querySelector("form").classList.add("hidden");
         document.querySelector(".main__p").classList.add("hidden");
         document.querySelector(".main__pp").classList.remove("hidden")
-        document.querySelector(".email-mess").textContent = email.value;
+        document.querySelector("#email-mess").textContent = email.value;
     }
 });
 
